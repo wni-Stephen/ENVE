@@ -1,0 +1,47 @@
+{
+    "key": "group_page_banner_clone",
+    "title": "Page Banner",
+    "fields": [
+        {
+            "key": "field_page_banner_clone",
+            "label": "Banner",
+            "name": "banner",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_shared_banner_fields"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Banner clone for pages.",
+    "show_in_rest": 1,
+    "modified": 1772816591
+}

@@ -1,0 +1,284 @@
+/**
+* WebsiteNI Joints
+* WebsiteNI Starter Theme built on JointsWP; http://jointswp.com/.
+* Created by WebsiteNI.
+*/
+
+/**
+* _fonts - Small.
+*/
+/* Fonts. */
+
+$heading : 'montserrat',
+sans-serif;
+$body: 'area-variable', sans-serif;
+
+
+h1 {
+	line-height: 1;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 40px;
+	font-weight: 700;
+	color: get-color(headings);
+
+	&.uppercase {
+		text-transform: uppercase;
+	}
+
+	&.nomarginbottom {
+		margin-bottom: 0px;
+	}
+
+	&.marginbottomsml {
+		margin-bottom: 10px;
+	}
+
+	&.marginbottomlrg {
+		margin-bottom: 35px;
+	}
+}
+
+.hmb0 {
+	h1,h2,h3,h4,h5,h6 {
+		margin-bottom: 0px;
+	}
+}
+
+h2 {
+	letter-spacing: -1.9px;
+}
+
+#content .cell {
+	p div iframe {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	p img {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		// width: 100%;
+	}
+
+	ul+p {
+		margin-top: 20px;
+	}
+
+	p+h1,
+	p+h2,
+	p+h3,
+	p+h4,
+	p+h5,
+	p+h6,
+	ul+h1,
+	ul+h2,
+	ul+h3,
+	ul+h4,
+	ul+h5,
+	ul+h6 {
+		margin-top: 40px;
+	}
+}
+
+// body {
+//  font-size: 16px;
+// }
+p {
+	margin-bottom: 20px;
+	line-height: 1.6;
+}
+
+.pfirstof p:first-of-type {
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.plastof p:last-of-type {
+	margin-bottom: 0px;
+}
+
+.fontcolourwhite {
+	color: get-color(white);
+}
+
+.text-balance-sm {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-wrap: balance;
+	}
+}
+.text-balance {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-wrap: balance;
+	}
+}
+
+
+
+.section-label {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	text-transform: lowercase;
+	font-weight: 600;
+	color: get-color(primary);
+	font-family: $heading;
+	margin-bottom: 20px;
+	letter-spacing: -0.3px;
+	font-size: 16px;
+
+	&::before {
+		content: '';
+		display: inline-block;
+		width: 12px;
+		height: 35px;
+		background-image: url('../images/main/eclipse.svg.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		flex-shrink: 0;
+	}
+
+	&.blue {
+		color: get-color(primary);
+
+		&::before {
+			background-image: url('../images/main/eclipse-blue.svg');
+		}
+	}
+}
+
+.generalformat {
+	ol {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		counter-reset: generalformat-list;
+
+		li {
+			position: relative;
+			display: flex;
+			align-items: center;
+			gap: 14px;
+			margin-bottom: 24px;
+			padding-left: 0;
+			color: inherit;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 1.2;
+			counter-increment: generalformat-list;
+			letter-spacing: -0.7px;
+
+			&:before {
+				content: counter(generalformat-list);
+				flex: 0 0 40px;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				background: get-color(secondary);
+				color: get-color(primary);
+				font-size: 20px;
+				font-weight: 700;
+				line-height: 1;
+				font-family: $heading;
+
+			}
+
+		}
+
+	}
+}
+
+
+
+/**
+* _fonts - Medium.
+*/
+@media screen and (min-width: 640px) {
+	.pfirstof p:first-of-type {
+		font-size: 22px;
+	}
+}
+
+/**
+* _fonts - Large.
+*/
+@media screen and (min-width: 1024px) {
+	h2 {
+		letter-spacing: -1.2px;
+	}
+	.text-balance-sm {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-wrap: auto;
+	}
+}
+}
+
+/**
+* _fonts - XL.
+*/
+@media screen and (min-width: 1200px) {}
+
+/**
+* _fonts - XXL.
+*/
+@media screen and (min-width: 1440px) {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-bottom: 50px;
+	}
+
+	p {
+		font-size: 18px;
+		letter-spacing: -0.7px;
+	}
+
+	.section-label {
+		margin-bottom: 40px;
+	}
+	.generalformat {
+	ol {
+
+		li {
+			font-size: 18px;
+		}
+	}
+}
+}

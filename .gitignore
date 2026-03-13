@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+
+.env
+.env.*
+
+error_log
+*.log
+
+site/wp-content/uploads/
+site/wp-content/cache/
+site/wp-content/upgrade/
+
+site/wp-content/themes/WNI-Master-Theme/node_modules/
+site/wp-content/themes/WNI-Master-Theme/vendor/
+
+site/wp-content/debug.log
