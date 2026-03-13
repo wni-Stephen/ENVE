@@ -2,7 +2,6 @@
 /**
  * Flexible layout: Image Left / Partner Content Right.
  */
-
 $image = get_sub_field('image');
 $partner_name = get_sub_field('partner_name');
 $content = get_sub_field('content');
