@@ -21,9 +21,11 @@ $cta_button = get_sub_field('cta_button');
 				<?php if ($partner_name) : ?>
 					<div class="heading plastof"><h2><?php echo ($partner_name); ?></h2></div>
 				<?php endif; ?>
+				
 				<?php if ($content) : ?>
 					<div class="content plastof"><?php echo wp_kses_post($content); ?></div>
 				<?php endif; ?>
+
 				<?php if (!empty($cta_button['url']) && !empty($cta_button['title'])) : ?>
 					<a class="button spacingtop" href="<?php echo esc_url($cta_button['url']); ?>"<?php echo !empty($cta_button['target']) ? ' target="' . esc_attr($cta_button['target']) . '"' : ''; ?>>
 						<?php echo esc_html($cta_button['title']); ?>
